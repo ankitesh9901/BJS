@@ -1,0 +1,25 @@
+---
+- name: Install Docker and Setuptools
+  hosts: aws_ec2  # Replace with your dynamic inventory group name
+  become: yes
+  gather_facts: yes
+  tasks:
+    - name: Install Docker
+      become: true
+      vars:
+        ansible_python_interpreter: /usr/bin/python3.9
+      dnf:
+        name: docker
+        state: present
+
+    - name: Install Setuptools
+      become: true
+      dnf:
+        name: python-setuptools
+        state: present
+    - name: Start Docker Daemon
+      become: true
+      service:
+        name: docker
+        state: started
+        enabled: yes

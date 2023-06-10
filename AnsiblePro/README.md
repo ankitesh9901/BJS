@@ -12,6 +12,8 @@ This Ansible script automates the installation of Docker and Setuptools on the s
 
 2. Put ansible.cfg at /etc/ansible/ansible.cfg
 
+3. Run ansible-playbook install_docker_setuptools.yaml
+
 
 Make sure you are in the same directory where the playbook file is located.
 

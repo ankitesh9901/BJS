@@ -11,7 +11,7 @@ Make sure you have Go installed on your system. To compile and run the program, 
 2. Open a terminal or command prompt and navigate to the project directory.
 
 3. Run the following command to compile and run the program:
-
+      ```shell
       go run main.go <filename> <search_string>
   
       Ex:go run finder.go data.txt sample

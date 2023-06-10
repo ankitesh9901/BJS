@@ -23,7 +23,7 @@ Make sure you have Go installed on your system. To compile and run the program, 
 
 - This program reads the file line by line, so it may take longer to search for the string in very large files.
 
-- The search is case-sensitive. To perform a case-insensitive search, you can modify the code in the `main.go` file to convert both the line and the search string to lowercase or uppercase before comparison.
+- The search is case-sensitive. To perform a case-insensitive search, you can modify the code in the `finder.go` file to convert both the line and the search string to lowercase or uppercase before comparison.
 
 ## License
 
